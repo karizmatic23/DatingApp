@@ -8,7 +8,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   registerMode = false;
- 
 
   constructor(private http: HttpClient) { }
 
@@ -18,10 +17,7 @@ export class HomeComponent implements OnInit {
   registerToggle() {
     this.registerMode = true;
   }
-
- 
-
-  cancelRegisterMode(registerMode: boolean){
+  cancelRegisterMode(registerMode: boolean) {
     this.registerMode = registerMode;
   }
 
